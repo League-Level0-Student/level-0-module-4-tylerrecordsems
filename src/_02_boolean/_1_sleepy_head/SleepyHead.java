@@ -9,7 +9,7 @@ public class SleepyHead {
     public static void main(String[] args) {
         
         int isWeekday, isVacation;
-        
+         
         /* You MUST use the above boolean variables in your code */
         
         /*
