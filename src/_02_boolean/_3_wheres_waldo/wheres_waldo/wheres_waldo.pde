@@ -5,13 +5,16 @@ AudioSample doh;
 AudioSample woohoo;
 */
 
+
+ 
 void setup() {
   
   //Find a Where's Waldo picture and drop it into this sketch.     
   PImage waldo = loadImage("waldo.jpg"); // Change this to match your file name.
-  size(500, 500); // Change this to match the size of your waldo picture
-  image(waldo, 0, 0);
-
+  size(1000, 1000); // Change this to match the size of your waldo picture
+  waldo.resize(1000,1000);
+  background(waldo);
+  
   /*
     doh = minim.loadSample("homer-doh.wav"); 
     woohoo = minim.loadSample("homer-woohoo.wav"); 
