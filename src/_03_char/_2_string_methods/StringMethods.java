@@ -23,18 +23,17 @@ for (int i = 0; i < A.length(); i++) {
 	
 }
 		
-		// 5. Pick a char inside your String, and use a loop to determine
+		// 5. Pick a char inside String, and use a loop to determine
 		//    what position/index in the String the char is located.
 		//    Print the char's position to the console.
-		//    EXAMPLE: if youring is "abc" and you are searching 
-	
+		//    EXAMPLE: if youring is "abc" and you are searching   
 //             for char 'b', then print "b is at index 1"
 
 for (int i = 0; i < A.length(); i++) {
 	if (A.charAt(i)=='t') {
 		System.out.println(i);	
 	}
-
+  
 	}
 }
 }
