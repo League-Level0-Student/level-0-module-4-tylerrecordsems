@@ -3,25 +3,46 @@ package _03_char._3_pi_aloud;
 import java.io.IOException;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class PiAloud {
+public static void main(String[] args) {
+	
 
 	// 1. Make a main method and make sure your program can run
 
+	
+
 	// 2. Make a String variable to hold 20 digits of Pi. You could use http://www.piday.org/million/ to get this.
 
+String pi ="3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280";
 	// 3. Print out 3 digits of Pi. The first value is "pi.charAt(0)", the second is "pi.charAt(1)"
 	// Check the console shows 3.1
+for (int i = 0; i < pi.length(); i++) {
+	
 
-	// 4. Print ALL the digits of of the Pi String (hint: use a loop)
+System.out.println(pi.charAt(i));
+//speak(pi.charAt(i));
+
+char Nim =getInputFromUser();
+if(Nim == pi.charAt(i)) {
+	JOptionPane.showMessageDialog(null, "Correct");
+}else {
+	JOptionPane.showMessageDialog(null, "Incorrect");
+}
+ 
+}
+
+// 4. Print ALLthe digits of of the Pi String (hint: use a loop)
 
 	// 5. Use the speak() method below to speak each digit of Pi.
 
 	// [CHALLENGE]
 	// *6. Get a character from the user using the getInputFromUser() method
-	// *7. Compare the users' char to the next digit of Pi
+	// *7. Compare the users' char to the next digit of Pi ????
 	// *8. If they are correct, print out "correct". If they are not, print "incorrect" 
 	
-	
+}
 	
 	/********************  Use these methods. DON'T CHANGE THE CODE BELOW  ******************/
 
@@ -47,5 +68,24 @@ public class PiAloud {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
